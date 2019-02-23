@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Report Card</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script src="javascript/drop-down_semester_selector.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="javascript/nav-sizing.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Salsa|Roboto|Aguafina+Script|Oswald" rel="stylesheet">
+    <link href="https://rawgit.com/bevacqua/dragula/master/dist/dragula.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="page-top">
+    <div class="mesh">
+        <div class="gradient">
+            <h2 class="name2"><i>WEBDZIEKANAT</i></h2>
+            <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: transparent;">
+                <div class="container">
+                    <span class="navbar-text">
+					Portal user: <b>Aleksandra Koralczyk</b>
+                    </span>
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="studentplanner.html">Student Planner</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="reportcard.html">Report Card
+                                    <span class="sr-only">(current)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="schedule.html">Schedule</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://virtul.p.lodz.pl/">virTUL</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="sspl.html">I &#x2764; SSPŁ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://poczta.p.lodz.pl/">E-mail</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <h1 class="name1">  Politechnika Łódzka </h1>
+        </div>
+    </div>
+</div>
+<div class="gradecontainer">
+    <div class="button dropdown">
+        <select id="semesterselector">
+            <option value="one">First semester</option>
+            <option value="two">Second</option>
+            <option value="three">Third</option>
+            <option value="four">Fourth</option>
+        </select>
+    </div>
+    <div id="one" class="semesters one">
+        <div class="semesterbox">
+            <div class="gradecontainer">
+                <div class="name">Aleksandra Koralczyk</div>
+                <div class="subject">2 ECTS - Academic English with mgr Joanna Miłosz-Bartczak</div>
+                <div class="subgrade">
+                    <h2 class="task">4</h2>
+                </div>
+                <div class="subgrade">
+                    <h2 class="task">5</h2>
+                </div>
+                <div class="grade">
+                    <h2 class="task">4,5</h2>
+                </div>
+            </div>
+            <div class="gradecontainer">
+                <div class="subject">6 ECTS - Algorithms and Data Structures with dr hab. Szymon Grabowski</div>
+                <div class="subgrade">
+                    <h2 class="task">5</h2>
+                </div>
+                <div class="subgrade">
+                    <h2 class="task">5</h2>
+                </div>
+                <div class="subgrade">
+                    <h2 class="task">5</h2>
+                </div>
+                <div class="subgrade">
+                    <h2 class="task">5</h2>
+                </div>
+                <div class="grade">
+                    <h2 class="task">5</h2>
+                </div>
+            </div>
+            <div class="gradecontainer">
+                <div class="subject">6 ECTS - Intro. to Computer Science with dr hab. inż. Lidia Jackowska-Strumiłło</div>
+                <div class="subgrade">
+                    <h2 class="task">4</h2>
+                </div>
+                <div class="subgrade">
+                    <h2 class="task">4</h2>
+                </div>
+                <div class="subgrade">
+                    <h2 class="task">3</h2>
+                </div>
+                <div class="subgrade">
+                    <h2 class="task">3</h2>
+                </div>
+                <div class="grade">
+                    <h2 class="task">3,5</h2>
+                </div>
+            </div>
+            <div class="gradecontainer">
+                <div class="subject">6 ECTS - Mathematics 1 with dr inż. Sławomir Jagodziński</div>
+                <div class="subgrade">
+                    <h2 class="task">4</h2>
+                </div>
+                <div class="subgrade">
+                    <h2 class="task">4</h2>
+                </div>
+                <div class="subgrade">
+                    <h2 class="task">3</h2>
+                </div>
+                <div class="subgrade">
+                    <h2 class="task">3</h2>
+                </div>
+                <div class="grade">
+                    <h2 class="task">3,5</h2>
+                </div>
+            </div>
+            <div class="gradecontainer">
+                <div class="subject">6 ECTS - Physics with dr inż. Bogdan Żółtowski</div>
+                <div class="subgrade">
+                    <h2 class="task">4</h2>
+                </div>
+                <div class="subgrade">
+                    <h2 class="task">3</h2>
+                </div>
+                <div class="subgrade">
+                    <h2 class="task">5</h2>
+                </div>
+                <div class="grade">
+                    <h2 class="task">4</h2>
+                </div>
+            </div>
+            <div class="gradecontainer">
+                <div class="subject">3 ECTS - Scripting Languages with dr inż. Witold Marańda</div>
+                <div class="subgrade">
+                    <h2 class="task">4</h2>
+                </div>
+                <div class="subgrade">
+                    <h2 class="task">4</h2>
+                </div>
+                <div class="subgrade">
+                    <h2 class="task">4</h2>
+                </div>
+                <div class="subgrade">
+                    <h2 class="task">4</h2>
+                </div>
+                <div class="grade">
+                    <h2 class="task">4</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- SEMESTR TWO -->
+    <div id="two" class="semesters two" style="display:none">
+        <div class="semesterbox">
+            <div class="gradecontainer">
+                <div class="name">Aleksandra Koralczyk</div>
+                <div class="subject">2 ECTS - Business English for Engineers 1 with mgr Zuzanna Kiermasz</div>
+                <div class="subgrade">
+                    <h2 class="task">4</h2>
+                </div>
+                <div class="subgrade">
+                    <h2 class="task">5</h2>
+                </div>
+                <div class="subgrade">
+                    <h2 class="task">5</h2>
+                </div>
+                <div class="subgrade">
+                    <h2 class="task">5</h2>
+                </div>
+                <div class="subgrade">
+                    <h2 class="task">5</h2>
+                </div>
+                <div class="grade">
+                    <h2 class="task">5</h2>
+                </div>
+            </div>
+            <div class="gradecontainer">
+                <div class="subject">6 ECTS - Electrical Circuits and Measurements with prof. dr hab. inż. Michał Tadeusiewicz</div>
+                <div class="subgrade">
+                    <h2 class="task">5</h2>
+                </div>
+                <div class="subgrade">
+                    <h2 class="task">3</h2>
+                </div>
+                <div class="subgrade">
+                    <h2 class="task">4</h2>
+                </div>
+                <div class="subgrade">
+                    <h2 class="task">3,5</h2>
+                </div>
+                <div class="subgrade">
+                    <h2 class="task">4,5</h2>
+                </div>
+                <div class="grade">
+                    <h2 class="task">4</h2>
+                </div>
+            </div>
+            <div class="gradecontainer">
+                <div class="subject">3 ECTS - Java Fundamentals with dr inż. Bartosz Sakowicz</div>
+                <div class="subgrade">
+                    <h2 class="task">3</h2>
+                </div>
+                <div class="subgrade">
+                    <h2 class="task">3</h2>
+                </div>
+                <div class="grade">
+                    <h2 class="task">3</h2>
+                </div>
+            </div>
+            <div class="gradecontainer">
+                <div class="subject">6 ECTS - Mathematics 2 with dr inż. Sławomir Jagodziński</div>
+                <div class="subgrade">
+                    <h2 class="task">4</h2>
+                </div>
+                <div class="subgrade">
+                    <h2 class="task">5</h2>
+                </div>
+                <div class="subgrade">
+                    <h2 class="task">4,5</h2>
+                </div>
+                <div class="subgrade">
+                    <h2 class="task">3</h2>
+                </div>
+                <div class="subgrade">
+                    <h2 class="task">4,5</h2>
+                </div>
+                <div class="subgrade">
+                    <h2 class="task">4,5</h2>
+                </div>
+                <div class="subgrade">
+                    <h2 class="task">5</h2>
+                </div>
+                <div class="grade">
+                    <h2 class="task">4,5</h2>
+                </div>
+            </div>
+            <div class="gradecontainer">
+                <div class="subject">3 ECTS - Modern Physics dr inż. Andrzej Brozi</div>
+                <div class="subgrade">
+                    <h2 class="task">4</h2>
+                </div>
+                <div class="subgrade">
+                    <h2 class="task">3</h2>
+                </div>
+                <div class="subgrade">
+                    <h2 class="task">5</h2>
+                </div>
+                <div class="grade">
+                    <h2 class="task">4</h2>
+                </div>
+            </div>
+            <div class="gradecontainer">
+                <div class="subject">5 ECTS - Programming and Data Structures with dr inż. Grzegorz Jabłoński</div>
+                <div class="subgrade">
+                    <h2 class="task">4</h2>
+                </div>
+                <div class="grade">
+                    <h2 class="task">4</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- SEMESTR THREE-->
+    <div id="three" class="semesters three" style="display:none">
+        <div class="semesterbox">
+            <div class="gradecontainer">
+                <div class="name">Aleksandra Koralczyk</div>
+                <div class="subject">2 ECTS - Business English for Engineers 2 with mgr Grażyna Budzińska</div>
+                <div class="subgrade">
+                    <h2 class="task">4</h2>
+                </div>
+                <div class="subgrade">
+                    <h2 class="task">3</h2>
+                </div>
+                <div class="subgrade">
+                    <h2 class="task">5</h2>
+                </div>
+                <div class="subgrade">
+                    <h2 class="task">5</h2>
+                </div>
+                <div class="grade">
+                    <h2 class="task">4</h2>
+                </div>
+            </div>
+            <div class="gradecontainer">
+                <div class="subject">6 ECTS - Databases with prof. dr hab. inż. Adam Pelikant</div>
+                <div class="subgrade">
+                    <h2 class="task">5</h2>
+                </div>
+                <div class="subgrade">
+                    <h2 class="task">5</h2>
+                </div>
+                <div class="grade">
+                    <h2 class="task">5</h2>
+                </div>
+            </div>
+            <div class="gradecontainer">
+                <div class="subject">3 ECTS - Digital Systems with dr inż. Piotr Dębiec</div>
+                <div class="subgrade">
+                    <h2 class="task">3</h2>
+                </div>
+                <div class="subgrade">
+                    <h2 class="task">4</h2>
+                </div>
+                <div class="subgrade">
+                    <h2 class="task">3</h2>
+                </div>
+                <div class="subgrade">
+                    <h2 class="task">3</h2>
+                </div>
+                <div class="grade">
+                    <h2 class="task">3</h2>
+                </div>
+            </div>
+            <div class="gradecontainer">
+                <div class="subject">2 ECTS - Electronics Fundamentals with dr hab. inż. Marcin Janicki</div>
+                <div class="subgrade">
+                    <h2 class="task">4</h2>
+                </div>
+                <div class="subgrade">
+                    <h2 class="task">4</h2>
+                </div>
+                <div class="subgrade">
+                    <h2 class="task">5</h2>
+                </div>
+                <div class="subgrade">
+                    <h2 class="task">5</h2>
+                </div>
+                <div class="grade">
+                    <h2 class="task">4,5</h2>
+                </div>
+            </div>
+            <div class="gradecontainer">
+                <div class="subject">6 ECTS - Mathematics 3 with dr inż. Jakub Szczepaniak</div>
+                <div class="subgrade">
+                    <h2 class="task">4</h2>
+                </div>
+                <div class="grade">
+                    <h2 class="task">4</h2>
+                </div>
+            </div>
+            <div class="gradecontainer">
+                <div class="subject">6 ECTS - Object Oriented Programming in C++ with dr inż. Grzegorz Jabłoński</div>
+                <div class="subgrade">
+                    <h2 class="task">3</h2>
+                </div>
+                <div class="subgrade">
+                    <h2 class="task">3</h2>
+                </div>
+                <div class="grade">
+                    <h2 class="task">3</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- SEMESTR FOUR-->
+    <div id="four" class="semesters four" style="display:none">
+        <div class="semesterbox">
+            <div class="gradecontainer">
+                <div class="name">Aleksandra Koralczyk</div>
+                <div class="subject">4 ECTS - Computer Architecture with dr inż. Witold Marańda</div>
+                <div class="subgrade">
+                    <h2 class="task">5</h2>
+                </div>
+                <div class="subgrade">
+                    <h2 class="task">5</h2>
+                </div>
+                <div class="subgrade">
+                    <h2 class="task">5</h2>
+                </div>
+                <div class="grade">
+                    <h2 class="task">5</h2>
+                </div>
+            </div>
+            <div class="gradecontainer">
+                <div class="subject">3 ECTS - Interactive Web Applications with dr inż. Rafał Kotas</div>
+                <div class="subgrade">
+                    <h2 class="task">5</h2>
+                </div>
+                <div class="subgrade">
+                    <h2 class="task">5</h2>
+                </div>
+                <div class="subgrade">
+                    <h2 class="task">4</h2>
+                </div>
+                <div class="grade">
+                    <h2 class="task">5</h2>
+                </div>
+            </div>
+            <div class="gradecontainer">
+                <div class="subject">4 ECTS - Język hiszpański A2E with mgr Lidia Wappa-Ciesielska</div>
+                <div class="subgrade">
+                    <h2 class="task">5</h2>
+                </div>
+                <div class="subgrade">
+                    <h2 class="task">5</h2>
+                </div>
+                <div class="grade">
+                    <h2 class="task">5</h2>
+                </div>
+            </div>
+            <div class="gradecontainer">
+                <div class="subject">5 ECTS - Numerical Methods with prof. dr hab. inż. Sławomir Wiak</div>
+                <div class="subgrade">
+                    <h2 class="task">4</h2>
+                </div>
+                <div class="subgrade">
+                    <h2 class="task">4</h2>
+                </div>
+                <div class="subgrade">
+                    <h2 class="task">3</h2>
+                </div>
+                <div class="subgrade">
+                    <h2 class="task">4</h2>
+                </div>
+                <div class="subgrade">
+                    <h2 class="task">4</h2>
+                </div>
+                <div class="subgrade">
+                    <h2 class="task">3</h2>
+                </div>
+                <div class="grade">
+                    <h2 class="task">4</h2>
+                </div>
+            </div>
+            <div class="gradecontainer">
+                <div class="subject">3 ECTS - Software Engineering with dr inż. Tomasz Kowalski</div>
+                <div class="subgrade">
+                    <h2 class="task">3</h2>
+                </div>
+                <div class="subgrade">
+                    <h2 class="task">5</h2>
+                </div>
+                <div class="subgrade">
+                    <h2 class="task">5</h2>
+                </div>
+                <div class="grade">
+                    <h2 class="task">4</h2>
+                </div>
+            </div>
+            <div class="gradecontainer">
+                <div class="subject">10 ECTS - Team Project dr inż. Krzysztof Tomalczyk</div>
+                <div class="subgrade">
+                    <h2 class="task">4,5</h2>
+                </div>
+                <div class="subgrade">
+                    <h2 class="task">4,5</h2>
+                </div>
+                <div class="grade">
+                    <h2 class="task">4,5</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--END-->
+</div>
+</body>
+<script>
+    $(document).ready(function(){
+        if ($(window).width() < 1700 && $(window).load()){
+            $('.name1').hide();
+        }
+        if ($(window).width() < 1650 && $(window).load()){
+            $('.navbar-text').hide();
+        }
+
+        $(window).resize(function(){
+            if ($(window).width() < 1700){
+                $('.name1').hide();
+            }
+            if ($(window).width() > 1700){
+                $('.name1').show();
+            }
+            if ($(window).width() < 1650){
+                $('.navbar-text').hide();
+            }
+            if ($(window).width() > 1650){
+                $('.navbar-text').show();
+            }
+        });
+    });
+</script>
+</html>
